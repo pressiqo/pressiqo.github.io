@@ -1,2 +1,1 @@
-# pressiqo.github.io
-Pressiqo landing page
+# Pressiqo APP
