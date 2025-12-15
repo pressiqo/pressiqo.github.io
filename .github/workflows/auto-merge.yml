@@ -1,0 +1,54 @@
+name: Auto Pull Request and Merge
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - gh-pages
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create Pull Request
+        id: pr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Auto PR from ${{ github.ref_name }}"
+          branch: ${{ github.ref_name }}
+          base: main
+          title: "Auto PR: Merge ${{ github.ref_name }} into main"
+          body: "This pull request was automatically created by GitHub Actions."
+          labels: automated
+
+      - name: Merge Pull Request if possible
+        if: steps.pr.outputs.pull-request-number != ''
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumber = parseInt("${{ steps.pr.outputs.pull-request-number }}");
+            try {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                merge_method: 'squash'
+              });
+              console.log(`PR #${prNumber} merged successfully`);
+            } catch (error) {
+              console.log(`PR #${prNumber} could not be merged automatically: ${error.message}`);
+            }

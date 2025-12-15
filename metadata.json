@@ -1,0 +1,7 @@
+{
+  "name": "www.pressiqo.app",
+  "description": "AI-powered WordPress automation SaaS platform.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
