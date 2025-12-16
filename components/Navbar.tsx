@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             {/* <div className="p-2 bg-blue-600/10 rounded-lg border border-blue-600/20"> */}
             {/* <Zap className="h-8 w-8 text-blue-500" /> */}
-            <img src="./assets/logo-512px.png" alt="Pressiqo Logo" className="h-8 w-8" />
+            <img src="/assets/logo-512px.png" alt="Pressiqo Logo" className="h-8 w-8" />
             {/* </div> */}
             <span className="text-xl font-bold text-slate-100 tracking-tight">Pressiqo</span>
           </div>
