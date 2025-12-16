@@ -8,21 +8,21 @@ const testimonials = [
     author: "Sarah Jenkins",
     role: "Content Manager",
     company: "TechFlow Media",
-    image: "https://randomuser.me/api/portraits/women/44.jpg"
+    image: "./assets/mahros.jpg"
   },
   {
     quote: "The local-first approach is a game changer for us. knowing my API keys and draft data stay on my machine gives me peace of mind that other cloud tools couldn't offer.",
     author: "Michael Ross",
     role: "Senior SEO Specialist",
     company: "GrowthSpike",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
+    image: "./assets/mahros.jpg"
   },
   {
     quote: "Best investment for my niche sites. The bulk generation feature paid for itself in day one. I can spin up a topical authority map in minutes.",
     author: "Elena Dragan",
     role: "Niche Site Builder",
     company: "Portfolio Ventures",
-    image: "https://randomuser.me/api/portraits/women/68.jpg"
+    image: "./assets/mahros.jpg"
   }
 ];
 
@@ -31,7 +31,7 @@ const Testimonials: React.FC = () => {
     <section className="py-24 bg-slate-950 relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full opacity-20 pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-base font-semibold text-blue-500 tracking-wide uppercase mb-2">Testimonials</h2>
@@ -70,9 +70,9 @@ const Testimonials: React.FC = () => {
 
               {/* Author Info */}
               <div className="flex items-center gap-4">
-                <img 
-                  src={item.image} 
-                  alt={item.author} 
+                <img
+                  src={item.image}
+                  alt={item.author}
                   className="w-12 h-12 rounded-full border-2 border-slate-800 object-cover"
                 />
                 <div>

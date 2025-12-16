@@ -27,26 +27,26 @@ const VideoShowcase: React.FC = () => {
           className="relative max-w-5xl mx-auto"
         >
           {/* Video Container */}
-          <a 
-            href="https://www.youtube.com/@pressiqo" 
-            target="_blank" 
+          <a
+            href="https://www.youtube.com/@pressiqo"
+            target="_blank"
             rel="noopener noreferrer"
             className="block relative aspect-video bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl shadow-blue-900/10 overflow-hidden group cursor-pointer"
           >
             {/* Placeholder for actual video or iframe */}
             <div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 group-hover:bg-slate-800/40 transition-colors">
-               <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center pl-1 shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform duration-300">
-                 <Play className="w-8 h-8 text-white fill-current" />
-               </div>
+              <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center pl-1 shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform duration-300">
+                <Play className="w-8 h-8 text-white fill-current" />
+              </div>
             </div>
             {/* Simulate video poster */}
-            <img 
-              src="https://picsum.photos/seed/pressiqo-demo/1280/720" 
-              alt="Pressiqo Dashboard Demo" 
-              className="w-full h-full object-cover opacity-60 mix-blend-overlay"
+            <img
+              src="./assets/screenshots/pressiqo-actioncenter.png"
+              alt="Pressiqo Dashboard Demo"
+              className="w-full h-full object-stretch opacity-100 mix-blend-overlay"
             />
           </a>
-          
+
           {/* Decorative Elements */}
           <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-600/20 blur-3xl rounded-full opacity-40"></div>
           <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-600/20 blur-3xl rounded-full opacity-40"></div>
