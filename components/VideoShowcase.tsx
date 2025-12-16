@@ -41,7 +41,7 @@ const VideoShowcase: React.FC = () => {
             </div>
             {/* Simulate video poster */}
             <img
-              src="./assets/screenshots/pressiqo-actioncenter.png"
+              src="/assets/screenshots/pressiqo-actioncenter.png"
               alt="Pressiqo Dashboard Demo"
               className="w-full h-full object-stretch opacity-100 mix-blend-overlay"
             />

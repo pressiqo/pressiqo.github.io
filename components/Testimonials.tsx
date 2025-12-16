@@ -8,21 +8,21 @@ const testimonials = [
     author: "Sarah Jenkins",
     role: "Content Manager",
     company: "TechFlow Media",
-    image: "./assets/mahros.jpg"
+    image: "/assets/mahros.jpg"
   },
   {
     quote: "The local-first approach is a game changer for us. knowing my API keys and draft data stay on my machine gives me peace of mind that other cloud tools couldn't offer.",
     author: "Michael Ross",
     role: "Senior SEO Specialist",
     company: "GrowthSpike",
-    image: "./assets/mahros.jpg"
+    image: "/assets/mahros.jpg"
   },
   {
     quote: "Best investment for my niche sites. The bulk generation feature paid for itself in day one. I can spin up a topical authority map in minutes.",
     author: "Elena Dragan",
     role: "Niche Site Builder",
     company: "Portfolio Ventures",
-    image: "./assets/mahros.jpg"
+    image: "/assets/mahros.jpg"
   }
 ];
 

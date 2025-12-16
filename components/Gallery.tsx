@@ -9,7 +9,7 @@ const tabs = [
     icon: <Edit3 className="w-4 h-4" />,
     title: 'Write and Refine in Real-Time',
     description: 'Chat with AI on the left, edit Markdown on the right. Changes sync instantly to your WordPress draft.',
-    image: './assets/screenshots/split-screen-editor.png'
+    image: '/assets/screenshots/split-screen-editor.png'
   },
   {
     id: 'workflow',
@@ -17,7 +17,7 @@ const tabs = [
     icon: <Workflow className="w-4 h-4" />,
     title: 'Visual Automation Builder',
     description: 'Drag and drop nodes to create custom content recipes. Chain research, writing, and SEO optimization steps.',
-    image: './assets/screenshots/workflows.png'
+    image: '/assets/screenshots/workflows.png'
   },
   {
     id: 'queue',
@@ -25,7 +25,7 @@ const tabs = [
     icon: <ListOrdered className="w-4 h-4" />,
     title: 'Batch Processing Center',
     description: 'Monitor the status of hundreds of articles. Pause, resume, or retry failed generations with one click.',
-    image: './assets/screenshots/queue.png'
+    image: '/assets/screenshots/queue.png'
   }
 ];
 
